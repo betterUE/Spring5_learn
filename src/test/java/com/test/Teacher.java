@@ -1,11 +1,15 @@
 package com.test;
 
+import java.util.List;
+
 public class Teacher {
     private String name;
 
     private String sex;
 
     private Integer age;
+
+    private List<Student> studentList;
 
     public Integer getAge() {
         return age;
@@ -29,5 +33,13 @@ public class Teacher {
 
     public void setSex(String sex) {
         this.sex = sex;
+    }
+
+    public List<Student> getStudentList() {
+        return studentList;
+    }
+
+    public void setStudentList(List<Student> studentList) {
+        this.studentList = studentList;
     }
 }
