@@ -41,9 +41,11 @@ public class testClassPathContext {
     @Test
     public void test5(){
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+        //根据 bean class 类型，获取所有的 id 值
         String[] beanNamesForType = ctx.getBeanNamesForType(Person.class);
         for (int i = 0; i < beanNamesForType.length; i++) {
             System.out.println(beanNamesForType[i]);
         }
     }
+
 }
